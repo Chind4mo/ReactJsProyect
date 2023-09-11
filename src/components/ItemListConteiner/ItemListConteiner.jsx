@@ -1,6 +1,3 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import CartWidget from '../CartWidget/CartWidget'
 import React from 'react';
 import './style.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
