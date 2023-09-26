@@ -1,25 +1,38 @@
-import {createBrowserRouter , RouterProvider} from 'react-router-dom'
-import { HomePage , ItemDetailPage , CheckoutPage} from '../pages'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+// import { HomePage, CheckOut , Intermedio , Barato } from '../Pages'
+import HomePage from '../Pages/HomePage/HomePage'
+import  Intermedio  from '../Pages/Intermedio/Intermedio';
+import  Barato  from '../Pages/Barato/Barato';
+import  CheckOut  from '../Pages/CheckOut/CheckOut';
+import ItemDetail from '../components/ItemDetail/index'
 
 const routes = createBrowserRouter([
     {
         path: '/',
-        element: <HomePage/>
+        element: <HomePage />
     },
     {
-        path:'/product/:idProduct',
-        element: <ItemDetailPage /> 
+        path: '/product/:idProduct',
+        element: <ItemDetail />
     },
     {
-        path:'/checkout',
-        element: <CheckoutPage />
+        path: '/Checkout',
+        element: <CheckOut />
+    },
+    {
+        path: '/Intermedio',
+        element: <Intermedio />
+    },
+    {
+        path: '/Barato',
+        element: <Barato/>
     }
 ])
 
 const Navigation = () => {
-    return ( 
-        <RouterProvider router={routes}/>
+    return (
+        <RouterProvider router={routes} />
     )
 }
 
-export default Navigation
+export default Navigation;

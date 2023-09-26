@@ -1,6 +1,6 @@
 const ItemList = ({ children }) => {
     return (
-        <div className="ItemList">
+        <div>
             {children}
         </div>
     );

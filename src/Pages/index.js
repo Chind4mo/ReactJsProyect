@@ -1,3 +1,5 @@
-export { default as HomePage } from './Home'
-export { default as ItemDetailPage } from './ItemDetail'
-export { default as CheckoutPage } from './Checkout'
+export { default as Home } from './HomePage'
+export { default as ItemDetail } from '../components/ItemDetail/index'
+export { default as Checkout } from './CheckOut'
+export { default as Barato } from './Barato'
+export { default as Intermedio } from './Intermedio'

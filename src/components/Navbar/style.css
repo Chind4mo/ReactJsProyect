@@ -50,10 +50,11 @@ ul {
 li {
     display: inline;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
     color: white;
     font-weight: bold;
 }

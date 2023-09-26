@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
-const Checkout = () => {
+const Intermedio = () => {
     return (
             <h1>
-                Checkout 
+                Caros
                 ir a <Link to={'/'}>Home</Link>
             </h1>
             
@@ -11,4 +11,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout;
+export default Intermedio;

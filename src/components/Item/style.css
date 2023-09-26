@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway:wght@200&family=Share+Tech&family=Ubuntu:wght@300&display=swap');
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Cards {
+    padding: 10px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.Link {
+    background-color: #5C5470;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 500px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

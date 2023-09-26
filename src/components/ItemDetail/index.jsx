@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { productos } from "../../products";
-import Layout from "../../components/Layout/Layout";
+import Layout from "../Layout/Layout";
+import './style.css'
 
 const ItemDetail = () => {
     const { idProduct } = useParams();
@@ -26,7 +27,9 @@ const ItemDetail = () => {
                 <p>Cargando . .</p>
             ) : (
                 <>
+                    <h1><img src={product.ImgUrl} alt={product.ImgUrl}/></h1>
                     <h1>{product.nombre}</h1> <br />
+                    <h2>{product.descripcion}</h2>
                     <h3>
                         ir a <Link to={"/"}>Home</Link>
                     </h3>

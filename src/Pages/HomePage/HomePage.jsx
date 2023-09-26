@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import Layout from '../../components/Layout/Layout';
-import Item from '../../components/Item/Item';
-import ItemList from '../../components/ItemList/ItemList';
-import {productos} from '../../products';
+
+import Layout from "../../components/Layout/Layout";
+import Item from "../../components/Item/Item";
+import ItemList from "../../components/ItemList/ItemList";
+import { productos } from "../../products";
 import { useEffect, useState } from "react";
 
 const Home = () => {
@@ -26,10 +26,11 @@ const Home = () => {
                     ? <p>Cargando...</p>
                     : products.map(prod => (
                         <Item 
+                        key={prod.id}
                         id={prod.id}
                         nombre={prod.nombre}
                         descripcion={prod.descripcion}
-
+                        imgUrl={prod.imgUrl}
                         />
                     ))
                 }
