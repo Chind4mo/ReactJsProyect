@@ -23,26 +23,18 @@ class ProductList extends Component {
         return (
             <Layout>
                 <div>
-                {/* Agrega aquí la interfaz de usuario para mostrar los productos y la selección de categoría */}
-                <div>
-                    <button onClick={() => this.handleCategoryChange('Todos')}>Todos</button>
-                    <button onClick={() => this.handleCategoryChange('Baratos')}>Barato</button>
-                    <button onClick={() => this.handleCategoryChange('Caros')}>Caros</button>
-                    <button onClick={() => this.handleCategoryChange('Intermedios')}>Intermedios</button>
-                    <button onClick={() => this.handleCategoryChange('Tablets/PC')}>Tablets/PC</button>
-                    {}
-                </div>
-                {}
-                <ItemList>
-                {filteredProducts.map(prod => (
-                    <div key={prod.id}>
-                        <h2>{prod.nombre}</h2>
-                        <p>{prod.descripcion}</p>
-                        {}
+                    {/* Agrega aquí la interfaz de usuario para mostrar los productos y la selección de categoría */}
+                    <div>
+                        <button onClick={() => this.handleCategoryChange('Todos')}>Todos</button>
+                        <button onClick={() => this.handleCategoryChange('Baratos')}>Barato</button>
+                        <button onClick={() => this.handleCategoryChange('Caros')}>Caros</button>
+                        <button onClick={() => this.handleCategoryChange('Intermedios')}>Intermedios</button>
+                        <button onClick={() => this.handleCategoryChange('Tablets/PC')}>Tablets/PC</button>
+                        { }
                     </div>
-                ))}
-                </ItemList>
-            </div>
+                    { }
+                    <ItemList products={filteredProducts} />
+                </div>
             </Layout>
         );
     }

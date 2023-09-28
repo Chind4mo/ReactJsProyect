@@ -1,9 +1,9 @@
-
+import { productos } from "../../products";
+import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import Item from "../../components/Item/Item";
 import ItemList from "../../components/ItemList/ItemList";
-import { productos } from "../../products";
-import { useEffect, useState } from "react";
+
 
 const Home = () => {
 
@@ -20,23 +20,13 @@ const Home = () => {
 
     return (
         <Layout>
-            <ItemList>
-                {
-                    isLoading
-                    ? <p>Cargando...</p>
-                    : products.map(prod => (
-                        <Item 
-                        key={prod.id}
-                        id={prod.id}
-                        nombre={prod.nombre}
-                        descripcion={prod.descripcion}
-                        imgUrl={prod.imgUrl}
-                        />
-                    ))
-                }
-            </ItemList>
+            {
+                isLoading
+                ? <p>Cargando ... </p>
+                : <ItemList products={products}/>
+            }
         </Layout>
-    )
-}
+    );
+};
 
 export default Home;

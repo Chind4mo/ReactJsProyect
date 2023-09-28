@@ -5,6 +5,7 @@ import  Intermedio  from '../Pages/Intermedio/Intermedio';
 import  Barato  from '../Pages/Barato/Barato';
 import  CheckOut  from '../Pages/CheckOut/CheckOut';
 import ItemDetail from '../components/ItemDetail/index'
+import Caros from '../Pages/Caros/Caros';
 
 const routes = createBrowserRouter([
     {
@@ -26,7 +27,11 @@ const routes = createBrowserRouter([
     {
         path: '/Barato',
         element: <Barato/>
-    }
+    },
+    {
+        path: '/Caros',
+        element: <Caros/>
+    },
 ])
 
 const Navigation = () => {

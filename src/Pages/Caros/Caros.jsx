@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Intermedio = () => {
+const Caros = () => {
+    
     return (
             <h1>
-                Intermedios
+                Caros
                 ir a <Link to={'/'}>Home</Link>
             </h1>
             
@@ -11,4 +12,4 @@ const Intermedio = () => {
     )
 }
 
-export default Intermedio;
+export default Caros;

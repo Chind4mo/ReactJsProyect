@@ -14,9 +14,9 @@ const Navbar = () => {
                     <Link to={"/"}><h1>CHINDAMO'S</h1></Link>
                 </div>
                 <ul>
-                    <li><Link to={"/Barato"}>Categorias</Link></li>
-                    <li><Link to={""}>Contacto</Link></li>
-                    <li><Link to={""}>Nosotros</Link></li>
+                    <li><Link to={"/Barato"}>Barato</Link></li>
+                    <li><Link to={"/Intermedio"}>Intermedio</Link></li>
+                    <li><Link to={"Caros"}>Caros</Link></li>
                 </ul>
                 <CartWidget />
             </div>
