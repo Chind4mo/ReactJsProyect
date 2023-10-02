@@ -4,10 +4,9 @@ import Layout from '../../components/Layout/Layout';
 import ItemList from '../../components/ItemList/ItemList';
 import './style.css'
 
-
 class ProductList extends Component {
     state = {
-        selectedCategory: 'Todos',
+        selectedCategory: "Baratos",
     };
 
     handleCategoryChange = (category) => {
@@ -16,23 +15,11 @@ class ProductList extends Component {
 
     render() {
         const { selectedCategory } = this.state;
-        const filteredProducts = selectedCategory === 'Todos'
-            ? productos
-            : productos.filter(product => product.categoria === selectedCategory);
+        const filteredProducts = productos.filter(product => product.categoria === selectedCategory);
 
         return (
             <Layout>
                 <div>
-                    {/* Agrega aquí la interfaz de usuario para mostrar los productos y la selección de categoría */}
-                    <div>
-                        <button onClick={() => this.handleCategoryChange('Todos')}>Todos</button>
-                        <button onClick={() => this.handleCategoryChange('Baratos')}>Barato</button>
-                        <button onClick={() => this.handleCategoryChange('Caros')}>Caros</button>
-                        <button onClick={() => this.handleCategoryChange('Intermedios')}>Intermedios</button>
-                        <button onClick={() => this.handleCategoryChange('Tablets/PC')}>Tablets/PC</button>
-                        { }
-                    </div>
-                    { }
                     <ItemList products={filteredProducts} />
                 </div>
             </Layout>

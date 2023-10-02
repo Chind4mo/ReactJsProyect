@@ -14,12 +14,25 @@ const ItemDetail = () => {
     );
 
     useEffect(() => {
-        setTimeout(() => {
-            console.log(searchProduct);
-            setProduct(searchProduct);
-            setIsLoading(false);
-        }, 1000);
-    }, []);
+        const fetchData = () => {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(searchProduct);
+                }, 1000);
+            });
+        };
+
+        fetchData()
+            .then((data) => {
+                console.log(data);
+                setProduct(data);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                console.error("Error al cargar datos:", error);
+                setIsLoading(false);
+            });
+    }, [searchProduct]);
 
     return (
         <Layout>
@@ -27,7 +40,7 @@ const ItemDetail = () => {
                 <p>Cargando . .</p>
             ) : (
                 <>
-                    <h1><img src={product.ImgUrl} alt={product.ImgUrl}/></h1>
+                    <h1><img src={product.ImgUrl} alt={product.ImgUrl} /></h1>
                     <h1>{product.nombre}</h1> <br />
                     <h2>{product.descripcion}</h2>
                     <h3>

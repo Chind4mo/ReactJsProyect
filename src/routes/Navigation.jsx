@@ -6,6 +6,7 @@ import  Barato  from '../Pages/Barato/Barato';
 import  CheckOut  from '../Pages/CheckOut/CheckOut';
 import ItemDetail from '../components/ItemDetail/index'
 import Caros from '../Pages/Caros/Caros';
+import Tablets from '../Pages/Tablets/Tablets'
 
 const routes = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([
     {
         path: '/Caros',
         element: <Caros/>
+    },
+    {
+        path: '/Tablets',
+        element: <Tablets/>
     },
 ])
 

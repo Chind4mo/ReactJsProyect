@@ -6,7 +6,7 @@ import './style.css'
 
 class ProductList extends Component {
     state = {
-        selectedCategory: "Intermedios",
+        selectedCategory: "Tablets/PC",
     };
 
     handleCategoryChange = (category) => {

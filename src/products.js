@@ -3,7 +3,7 @@ export const productos = [
         id: 0,
         nombre: "Samsung Galaxy s21",
         precio: 799.99,
-        categoria: "caros",
+        categoria: "Caros",
         stock: 10,
         descripcion: "El último smartphone de Samsung con pantalla AMOLED y cámara de alta resolución.",
         imgUrl: "https://picsum.photos/200/300?grayscale"

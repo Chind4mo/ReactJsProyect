@@ -16,7 +16,8 @@ const Navbar = () => {
                 <ul>
                     <li><Link to={"/Barato"}>Barato</Link></li>
                     <li><Link to={"/Intermedio"}>Intermedio</Link></li>
-                    <li><Link to={"Caros"}>Caros</Link></li>
+                    <li><Link to={"/Caros"}>Caros</Link></li>
+                    <li><Link to={"/Tablets"}>Tablets/PC</Link></li>
                 </ul>
                 <CartWidget />
             </div>

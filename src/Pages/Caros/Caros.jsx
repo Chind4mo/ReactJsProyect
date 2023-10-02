@@ -1,15 +1,30 @@
-import { Link } from "react-router-dom"
+import React, { Component } from 'react';
+import { productos } from '../../products';
+import Layout from '../../components/Layout/Layout';
+import ItemList from '../../components/ItemList/ItemList';
+import './style.css'
 
-const Caros = () => {
-    
-    return (
-            <h1>
-                Caros
-                ir a <Link to={'/'}>Home</Link>
-            </h1>
-            
-        
-    )
+class ProductList extends Component {
+    state = {
+        selectedCategory: 'Caros',
+    };
+
+    handleCategoryChange = (category) => {
+        this.setState({ selectedCategory: category });
+    };
+
+    render() {
+        const { selectedCategory } = this.state;
+        const filteredProducts = productos.filter(product => product.categoria === selectedCategory);
+
+        return (
+            <Layout>
+                <div>
+                    <ItemList products={filteredProducts} />
+                </div>
+            </Layout>
+        );
+    }
 }
 
-export default Caros;
+export default ProductList;
