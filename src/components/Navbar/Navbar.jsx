@@ -18,6 +18,7 @@ const Navbar = () => {
                     <li><Link to={"/Intermedio"}>Intermedio</Link></li>
                     <li><Link to={"/Caros"}>Caros</Link></li>
                     <li><Link to={"/Tablets"}>Tablets/PC</Link></li>
+                    <li><Link to={"/Cart"}>Tienda</Link></li>
                 </ul>
                 <CartWidget />
             </div>

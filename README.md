@@ -1,8 +1,34 @@
-# React + Vite
+# Proyecto Final 'Juan Chindamo' - ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Entrega final del proyecto del curso de ReactJS en coderhouse. 
+Un comercio virtual de venta de celulares realizado para que cualquier usuario pueda comprar facil, rapido y completamente seguro. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## Color Reference
+
+#Color
+
+#352F44
+#5C5470
+#B9B4C7
+#FAF0E6
+
+Via: https://colorhunt.co/
+
+
+## Authors
+
+Github: https://github.com/Chind4mo
+Ig: @juanchindamo
+
+
+
+## API Reference
+
+Referencia de la API utilizada en este proyecto:
+https://fakestoreapi.com/
+
+## 🚀 About Me
+Soy un programador en progreso, estudiando y trabajando con ganas de mas

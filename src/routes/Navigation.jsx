@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// import { HomePage, CheckOut , Intermedio , Barato } from '../Pages'
 import HomePage from '../Pages/HomePage/HomePage'
 import  Intermedio  from '../Pages/Intermedio/Intermedio';
 import  Barato  from '../Pages/Barato/Barato';
@@ -7,6 +6,7 @@ import  CheckOut  from '../Pages/CheckOut/CheckOut';
 import ItemDetail from '../components/ItemDetail/index'
 import Caros from '../Pages/Caros/Caros';
 import Tablets from '../Pages/Tablets/Tablets'
+import Cart from '../Pages/Cart/Cart'
 
 const routes = createBrowserRouter([
     {
@@ -36,6 +36,10 @@ const routes = createBrowserRouter([
     {
         path: '/Tablets',
         element: <Tablets/>
+    },
+    {
+        path: '/Cart',
+        element: <Cart/>
     },
 ])
 

@@ -3,8 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import { productos } from "../../products";
 import Layout from "../Layout/Layout";
 import './style.css'
+import Item from '../Item/Item'
 
 const ItemDetail = () => {
+    
     const { idProduct } = useParams();
     const [product, setProduct] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -14,6 +16,7 @@ const ItemDetail = () => {
     );
 
     useEffect(() => {
+
         const fetchData = () => {
             return new Promise((resolve) => {
                 setTimeout(() => {
@@ -39,17 +42,13 @@ const ItemDetail = () => {
             {isLoading ? (
                 <p>Cargando . .</p>
             ) : (
-                <>
-                    <h1><img src={product.ImgUrl} alt={product.ImgUrl} /></h1>
-                    <h1>{product.nombre}</h1> <br />
-                    <h2>{product.descripcion}</h2>
-                    <h3>
-                        ir a <Link to={"/"}>Home</Link>
-                    </h3>
-                </>
+                <Item>
+                </Item>
             )}
         </Layout>
     );
 };
 
 export default ItemDetail;
+
+

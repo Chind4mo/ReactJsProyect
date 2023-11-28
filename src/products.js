@@ -67,7 +67,7 @@ export const productos = [
         id: 7,
         nombre: "Huawei p60 PRO",
         precio: 499.99,
-        categoria: "Monitores",
+        categoria: "Caros",
         stock: 10,
         descripcion: "Un monitor diseñado para juegos con una alta frecuencia de actualización y tiempo de respuesta rápido.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -76,7 +76,7 @@ export const productos = [
         id: 8,
         nombre: "Huawei Y6 Dual 5G",
         precio: 249.99,
-        categoria: "Baratos",
+        categoria: "Intermedios",
         stock: 15,
         descripcion: "Una impresora láser de alta velocidad perfecta para entornos de oficina.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -85,7 +85,7 @@ export const productos = [
         id: 9,
         nombre: "Google Pixel 5",
         precio: 129.99,
-        categoria: "Altavoces",
+        categoria: "Baratos",
         stock: 18,
         descripcion: "Altavoces inalámbricos portátiles con sonido de alta calidad y batería de larga duración.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -93,7 +93,7 @@ export const productos = [
     {
         id: 10,
         nombre: "Google Pixel 6 PRO",
-        precio: 129.99,
+        precio: 429.99,
         categoria: "Caros",
         stock: 25,
         descripcion: "Un reloj inteligente que realiza un seguimiento de tu actividad física y salud en general.",
@@ -111,8 +111,8 @@ export const productos = [
     {
         id: 12,
         nombre: "Iphone 14 ",
-        precio: 89.99,
-        categoria: "Periféricos",
+        precio: 525.00,
+        categoria: "Caros",
         stock: 15,
         descripcion: "Un teclado mecánico con retroiluminación RGB y teclas programables para jugadores.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -120,8 +120,8 @@ export const productos = [
     {
         id: 13,
         nombre: "Iphone 14 PRO",
-        precio: 149.99,
-        categoria: "Almacenamiento",
+        precio: 749.99,
+        categoria: "Caros",
         stock: 10,
         descripcion: "Un disco duro externo de alta capacidad para almacenar tus archivos importantes.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -129,7 +129,7 @@ export const productos = [
     {
         id: 14,
         nombre: "Iphone 14 PRO MAX",
-        precio: 199.99,
+        precio: 800.99,
         categoria: "Caros",
         stock: 12,
         descripcion: "Una cámara de seguridad para el hogar con transmisión en vivo y detección de movimiento.",
@@ -138,8 +138,8 @@ export const productos = [
     {
         id: 15,
         nombre: "Sony Xperia Z5 Premium",
-        precio: 499.99,
-        categoria: "Caros",
+        precio: 299.99,
+        categoria: "Intermedios",
         stock: 6,
         descripcion: "La última consola de Microsoft con gráficos de alta calidad y una amplia biblioteca de juegos.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -148,7 +148,7 @@ export const productos = [
         id: 16,
         nombre: "Sony Xperia XA1",
         precio: 349.99,
-        categoria: "Monitores",
+        categoria: "Intermedios",
         stock: 8,
         descripcion: "Un monitor con pantalla táctil para una experiencia de computación interactiva.",
         imgUrl: "https://picsum.photos/seed/picsum/200/300"
@@ -156,7 +156,7 @@ export const productos = [
     {
         id: 17,
         nombre: "Ipad Mini",
-        precio: 249.99,
+        precio: 549.99,
         categoria: "Tablets/PC",
         stock: 10,
         descripcion: "Una impresora 3D de calidad para proyectos de fabricación y prototipado.",
@@ -165,7 +165,7 @@ export const productos = [
     {
         id: 18,
         nombre: "Ipad Pro",
-        precio: 299.99,
+        precio: 899.99,
         categoria: "Tablets/PC",
         stock: 14,
         descripcion: "Una aspiradora robot que limpia automáticamente tu hogar con tecnología de mapeo.",
@@ -174,7 +174,7 @@ export const productos = [
     {
         id: 19,
         nombre: "MacBook PRO",
-        precio: 699.99,
+        precio: 1099.99,
         categoria: "Tablets/PC",
         stock: 7,
         descripcion: "Un proyector de alta definición para disfrutar de películas y presentaciones con calidad cinematográfica.",
